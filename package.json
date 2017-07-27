@@ -1,10 +1,12 @@
 {
   "name": "tfk-api-unoconv",
-  "version": "2.2.3",
+  "version": "3.0.0",
+  "private": true,
   "description": "Unoconv as a webservice",
   "author": {
     "name": "Geir Gåsodden",
-    "email": "geir.gasodden@pythonia.no"
+    "email": "geir.gasodden@pythonia.no",
+    "url": "https://github.com/zrrrzzt"
   },
   "license": "MIT",
   "bugs": {
@@ -13,7 +15,7 @@
   "homepage": "https://github.com/zrrrzzt/tfk-api-unoconv",
   "main": "index.js",
   "engines": {
-    "node": ">=4.6.0"
+    "node": ">=8.2.1"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
@@ -28,20 +30,15 @@
     "url": "git://github.com/zrrrzzt/tfk-api-unoconv.git"
   },
   "dependencies": {
-    "hapi": "15.2.0",
-    "inert": "4.0.2",
+    "hapi": "16.5.0",
+    "inert": "4.2.1",
     "unoconv2": "1.0.0",
-    "uuid": "2.0.3"
+    "uuid": "3.0.1"
   },
   "devDependencies": {
-    "coveralls": "2.11.14",
-    "nsp": "2.6.2",
-    "standard": "8.6.0",
-    "tap": "8.0.0"
-  },
-  "unoconv": {
-    "unoconv": "0.6",
-    "python": "3.4.2",
-    "LibreOffice": "4.3"
+    "coveralls": "2.13.1",
+    "nsp": "2.7.0",
+    "standard": "10.0.2",
+    "tap": "10.7.0"
   }
 }
